@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 720px;
+      margin: auto;
+      padding-top: 20px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Ad Banner Container */
+    .ad-container {
+      margin: 0 auto 20px auto;
+      width: 300px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Popup Styles */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .popup-box {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: slideUp 0.3s ease-in-out;
+    }
+
+    .popup-box h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .popup-box p {
+      font-size: 15px;
+      color: #555;
+      margin: 16px 0;
+    }
+
+    .popup-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .popup-buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .popup-buttons button:first-child {
+      background: #e0e0e0;
+      color: #333;
+    }
+
+    .popup-buttons button:last-child {
+      background: #ff3c5f;
+      color: #fff;
+    }
+
+    .popup-buttons button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Banner Iklan 300x250 di atas video -->
+  <div class="ad-container">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'ba4b839b8718e0071c162f4a4896d426',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="//porchadvertise.com/ba4b839b8718e0071c162f4a4896d426/invoke.js"
+    ></script>
+  </div>
+
+  <video id="video" autoplay muted controls>
+    <source src="https://video-s.twimg.com/amplify_video/1996181991654576128/vid/avc1/720x720/Rvolc9zrvThj7C0d.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video.
+  </video>
+</div>
+
+<div class="native-ad">
+  <script
+  async="async"
+  data-cfasync="false"
+  src="//porchadvertise.com/d57fa5540bf1402d7b0c2346e5f77081/invoke.js"
+></script>
+<div id="container-d57fa5540bf1402d7b0c2346e5f77081"></div>
+</div>
+
+
+<!-- Popup Overlay -->
+<div id="popup-overlay" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Konfirmasi Usia</h2>
+    <p>This video contains mature content. Are you over 18 and want to continue?</p>
+    <div class="popup-buttons">
+      <button onclick="closePopup()">CANCEL</button>
+      <button onclick="window.location.href='https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29'">CONTINUE</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function closePopup() {
+    document.getElementById('popup-overlay').style.display = 'none';
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("video");
+    const popup = document.getElementById("popup-overlay");
+
+    video.addEventListener("play", function () {
+      setTimeout(function () {
+        video.pause();
+        popup.style.display = "flex";
+      }, 7000); // 7 detik
+    });
+  });
+</script>
+
+<script>
+let redirectedOnce = false;
+
+document.addEventListener("click", function () {
+  if (!redirectedOnce) {
+    redirectedOnce = true;
+    window.location.href = "https://porchadvertise.com/jgswk9x8e?key=f430bccb76fb758f4fde3ce8bddc450d";  //
+  }
+}, { once: true });
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4980999,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4980999&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
